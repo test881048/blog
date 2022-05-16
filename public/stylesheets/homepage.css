@@ -1,0 +1,33 @@
+body {
+    background-color: aliceblue;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#brandnav {
+    color: white;
+}
+
+#brandnamelog {
+    color:rgb(243, 144, 51);
+}
+
+#header {
+    position: sticky;
+    top: 0px;
+}
+
+img {
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 25%;
+}
+
+#posts {
+    transition: transform .2s;
+}
+
+#posts:hover {
+    cursor:pointer;
+    transform: scale(1.15);
+}

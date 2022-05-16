@@ -1,0 +1,9 @@
+body {
+    background-color: aliceblue;
+    padding: 50px;
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#thead {
+    background-color: grey;
+}
