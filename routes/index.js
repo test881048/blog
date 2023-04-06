@@ -109,8 +109,6 @@ router.post('/submitnewuser', function (req, res, next) {
           }
           else {
             var sql = `INSERT INTO users (name, email, user, password) VALUES ('${fname}','${email}','${ut}','${pwd}')`
-            console.log(sql)
-
             con.query(sql, function (err) {
               if (err) throw err
               console.log(`${fname} registered as new user.`)
@@ -129,7 +127,6 @@ router.post('/submitnewuser', function (req, res, next) {
   else {
     res.send("passwords not matching")
   }//pwd dont match
-
 })
 
 router.post('/submitlogin', function (req, res, next) {
@@ -159,7 +156,6 @@ router.post('/submitlogin', function (req, res, next) {
 })
 
 router.post('/addpost', function (req, res) {
-  //var username = req.paramss.name
   var title = req.body.addtutorialname
   var ltype = req.body.addlanguagetype
   var ide = req.body.addIDE
